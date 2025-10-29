@@ -52,6 +52,7 @@ h1 {
 }
 
 .fonctionnement {
+  cursor: pointer;
   position: relative;
   background-color: #f6f6f6;
   margin-bottom: 20px;
