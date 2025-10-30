@@ -109,3 +109,52 @@ footer {
 .footer__link a {
   color: #fff;
 }
+
+
+/*version desktop*/
+@media (min-width: 1024px) {
+    footer {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .footer__link {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .footer__logo {
+    order: 1; /* place le logo en dernier */
+  }
+}
+
+
+/*version tablette*/
+@media (min-width: 768px) {
+
+ footer {
+  width: 100%;
+  max-width: 100%; /* Force à ne jamais dépasser la largeur de l'écran */
+  margin: 0;
+  padding: 25px;
+  box-sizing: border-box;
+  overflow-x: hidden; /* Empêche tout débordement horizontal */
+
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+ }
+.footer__link {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .footer__logo {
+    order: 1; /* place le logo en dernier */
+  }
+}

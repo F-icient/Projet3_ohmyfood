@@ -178,3 +178,32 @@ h3 span {
 .anim:hover .accompagnement {
   max-width: calc(100% - 100px);
 }
+
+
+/*RESPONSIVE*/
+
+@media (min-width: 1024px) {
+  .title_resto{
+    align-items: center;     /* ✅ centre horizontalement */
+    justify-content: center;
+    text-align: center;      /* ✅ centre le texte du h1 */
+    margin: 32px auto;       /* ✅ espace vertical + centrage */
+  
+  }
+  /*coeur*/
+.heart {
+  top: 30px; 
+  right: 240px;
+}
+  main {
+    width: auto;      
+    margin: -50px 240px 0 180px;          
+    display: flex;
+    flex-direction: column;  
+    gap: 24px;              
+
+  }
+  .menus{
+    padding: 0 100px 0 100px;
+  }
+}

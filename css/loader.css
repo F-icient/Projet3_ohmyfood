@@ -6,6 +6,8 @@
   left: 0;
   width: 100%;
   height: 100vh;
+  overflow-x: hidden; /* Masque le débordement horizontal */
+  box-sizing: border-box; /* Inclut padding/border dans la largeur */
   background: linear-gradient(-45deg, #ff79da, #9356dc, #ff79da, #99e2d0);
   /*background-color: rgba(41, 39, 40, 1);  fond semi-transparent */
   backdrop-filter: blur(5px);

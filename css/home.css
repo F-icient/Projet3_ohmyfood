@@ -158,3 +158,57 @@ h1 {
   bottom: 25px;
   right: 20px;
 }
+
+
+
+
+/*version desktop*/
+@media (min-width: 1024px) {
+  h2 {margin-left: 180px;}
+  .fonctionnement_section {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 180px 20px 180PX;
+  }
+  .fonctionnement {
+    flex: 1; /* répartit l’espace équitablement */
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /*  2 colonnes */
+    gap: 32px;
+    padding-left: 180px;
+    padding-right: 180px;
+  }
+
+}
+
+/*version tablette*/
+@media (min-width: 768px) {
+
+ .fonctionnement_section {
+    flex-direction: column;
+    gap: 20px;
+    max-width: 400px;
+    width: 100%;
+    
+  }
+  header { 
+    max-width: 100%;
+    overflow-x: hidden; /* Masque le débordement horizontal */
+    box-sizing: border-box; /* Inclut padding/border dans la largeur */
+  }
+  .fonctionnement {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    justify-content: center; /* Centre le contenu du li */
+    width: calc(100% - 40px); /* Trois colonnes avec espace */
+    margin: 0;
+    
+  }
+  .cards{
+    max-width: 100%;
+    width: 100%;
+  }
+}
