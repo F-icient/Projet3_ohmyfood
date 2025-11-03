@@ -1,0 +1,60 @@
+// Media queries responsive
+@mixin tablet {
+  @media (min-width: $breakpoint-tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $breakpoint-desktop) {
+    @content;
+  }
+}
+
+// Gradient principal
+@mixin gradient-primary {
+  background: linear-gradient(170deg, $color-secondary, $color-primary);
+}
+
+// Gradient pour texte
+@mixin gradient-text {
+  background: linear-gradient(to bottom, $color-primary, $color-secondary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+// Ombre
+@mixin box-shadow($color: $shadow-light) {
+  box-shadow: 3px 4px 4px $color;
+}
+// ========================================
+// CARD HOVER EFFECT
+// ========================================
+@mixin card-hover {
+  transition: transform $transition-card, box-shadow $transition-card;
+  
+  &:hover {
+    transform: scale(1.03);
+    box-shadow: $shadow-card-hover;
+  }
+}
+
+// ========================================
+// FLEX CENTER
+// ========================================
+@mixin flex-center-gap($gap: 10px) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: $gap;
+}
+
+// ========================================
+// GRID LAYOUT
+// ========================================
+@mixin grid-layout($columns: 2, $gap: 32px) {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  gap: $gap;
+}

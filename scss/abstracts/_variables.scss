@@ -1,0 +1,81 @@
+// Couleurs
+$color-primary: #9356dc;
+$color-secondary: #ff79da;
+$color-bg-dark: #353535;
+$color-white: #fff;
+$shadow-light: #ccc;
+$shadow-medium: #999;
+$color-bg-grey: #f6f6f6;
+$color-bg-grey-light: #f3f3f3;
+$color-bg-location: #eaeaea;
+$color-tertiary: #99e2d0;
+$color-tertiary-dark: #008766;
+$color-icon-grey: #7e7e7e;
+$color-text-dark: #000;
+
+// Typographie
+$font-primary: "Roboto", sans-serif;
+$font-logo: "Shrikhand", cursive;
+$font-size-logo: 1.75rem;
+
+// Espacements
+$spacing-sm: 1rem;
+$spacing-md: 1.75rem;
+$spacing-xs: 0.5rem;
+$spacing-container: 180px; // Pour desktop
+
+// ========================================
+// SHADOWS 
+// ========================================
+$shadow-card: 0px 4px 15px rgba(0, 0, 0, 0.1);
+$shadow-card-hover: 0 8px 20px rgba(0, 0, 0, 0.5);
+$shadow-function: 0px 4px 8px 5px rgba(0, 0, 0, 0.07);
+$shadow-location: inset 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.15);
+
+// ========================================
+// TRANSITIONS
+// ========================================
+$transition-base: 0.3s ease;
+$transition-card: 0.4s ease;
+
+// Layout
+$border-radius-btn: 30px;
+$logo-height: 3rem;
+
+// Breakpoints
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+
+// ========================================
+// LOADER VARIABLES
+// ========================================
+$loader-duration: 6s;
+$loader-bg-gradient: linear-gradient(-45deg, $color-secondary, $color-primary, $color-secondary, $color-tertiary);
+$loader-text-gradient: conic-gradient(
+  $color-tertiary 0 33%,
+  $color-primary 33% 66%,
+  $color-secondary 66%
+);
+$loader-font-size: 2rem;
+$loader-z-index: 9999;
+$loader-blur: blur(5px);
+
+
+// ========================================
+// RESTAURANT PAGE VARIABLES
+// ========================================
+$menu-bg-color: #f6f6f6;
+$menu-item-bg: #fff;
+$menu-border-radius: 16px;
+$menu-border-color: $color-tertiary;
+$menu-border-width: 3px;
+
+$overlay-width: 80px;
+$overlay-bg: $color-tertiary;
+
+$transition-menu: all 0.4s ease;
+$transition-checkbox: transform 0.4s ease 0.2s, opacity 0.4s ease 0.2s;
+
+$main-margin-top-mobile: -70px;
+$main-margin-top-desktop: -50px;
+$main-border-radius: 25px;

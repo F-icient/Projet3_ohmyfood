@@ -1,0 +1,17 @@
+.btn {
+  color: $color-white;
+  @include gradient-primary; // Utilise le mixin gradient
+  border-radius: $border-radius-btn;
+  @include box-shadow; // Utilise le mixin shadow
+  width: fit-content;
+  margin: $spacing-md auto;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 1.5rem;
+  transition: all 0.3s ease;
+  
+  &:hover { // Nesting : équivaut à .btn:hover
+    opacity: 0.8;
+    @include box-shadow($shadow-medium);
+  }
+}

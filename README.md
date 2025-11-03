@@ -12,4 +12,4 @@ Mise en situation : Développer un site “mobile first” qui répertorie les m
 - [x] Structure HTML de base
 - [x] Design responsive
 - [x] Loader
-- [ ] SASS
+- [x] SASS

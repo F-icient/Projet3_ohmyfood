@@ -1,0 +1,12 @@
+header {
+  width: 100%;
+  text-align: center;
+}
+
+.logo {
+  height: $logo-height;
+  margin-top: $spacing-sm;
+  font-family: $font-logo;
+  font-weight: 700;
+  font-size: $font-size-logo;
+}

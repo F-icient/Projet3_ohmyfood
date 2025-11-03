@@ -1,0 +1,247 @@
+// ========================================
+// HOME PAGE STYLES
+// ========================================
+
+// Typography
+h1 {
+  font-size: 1.4rem;
+}
+
+h2 {
+  margin-left: 20px;
+  
+  @include desktop {
+    margin-left: $spacing-container;
+  }
+}
+
+main {
+  margin-top: 2rem;
+}
+
+// ========================================
+// LOCALISATION SECTION
+// ========================================
+.localisation {
+  background: $color-bg-location;
+  box-shadow: $shadow-location;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 13px;
+  width: 100%;
+  padding: 16px 0;
+}
+
+.loc_title {
+  margin: 0;
+  font-size: 1em;
+}
+
+// ========================================
+// INTRO SECTION
+// ========================================
+.intro {
+  text-align: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+
+.btn {
+  padding: 1rem;
+}
+
+// ========================================
+// FONCTIONNEMENT SECTION
+// ========================================
+.fonctionnement_section {
+  list-style: none;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 25px;
+  padding: 0 20px;
+  
+  // Tablette
+  @include tablet {
+    flex-direction: column;
+    gap: 20px;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  // Desktop
+  @include desktop {
+    flex-direction: row; // Les 3 éléments côte à côte
+    justify-content: space-between;
+    padding: 20px $spacing-container;
+    gap: 20px;
+    max-width: none; // ✅ Enlève la limite de largeur
+  }
+}
+
+.fonctionnement {
+  cursor: pointer;
+  position: relative;
+  background-color: $color-bg-grey;
+  margin-bottom: 20px;
+  margin-left: 12px; // ✅ Espace pour le numéro (mobile)
+  box-shadow: $shadow-function;
+  border-radius: 20px;
+  font-weight: 500;
+  box-sizing: border-box;
+  width: calc(100% - 32px);
+  display: flex;
+  align-items: center;
+  padding: 24px 0 24px 30px;
+  gap: 20px;
+  transition: $transition-base;
+  
+  // Tablette
+  @include tablet {
+    max-width: 100%;
+    width: calc(100% - 52px);
+    margin: 0 0 0 12px; // ✅ Garde le margin-left
+  }
+  
+  // Desktop - Les 3 cartes en ligne
+  @include desktop {
+    flex: 1; // ✅ Répartit l'espace équitablement
+    margin: 0 0 0 12px; // ✅ Garde TOUJOURS le margin-left
+    width: auto; // ✅ Largeur automatique
+    max-width: none; // ✅ Pas de limite
+  }
+  
+  &:hover {
+    background-color: rgba($color-primary, 0.1);
+  }
+}
+
+.fonctionnement__icon {
+  color: $color-icon-grey;
+  font-size: 20px;
+  width: 20px;
+  flex-shrink: 0;
+  
+  .fonctionnement:hover & {
+    color: $color-primary;
+  }
+}
+
+.number {
+  position: absolute;
+  top: 50%;
+  left: -12px; // ✅ TOUJOURS hors du conteneur
+  background-color: $color-primary;
+  color: $color-white;
+  font-size: 14px;
+  padding: 4px 9px;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  min-width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// ========================================
+// RESTAURANTS CARDS SECTION
+// ========================================
+.cards {
+  padding: 30px 18px 66px 18px;
+  background-color: $color-bg-grey-light;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  
+  h2 {
+    margin-left: 0;
+  }
+  
+  @include tablet {
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  @include desktop {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    padding-left: $spacing-container;
+    padding-right: $spacing-container;
+    
+    h2 {
+      grid-column: 1 / -1;
+    }
+  }
+}
+
+.card {
+  position: relative;
+  background-color: $color-white;
+  box-shadow: $shadow-card;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-top: 18px;
+  width: 100%;
+  transition: transform $transition-card, box-shadow $transition-card;
+  
+  &:hover {
+    transform: scale(1.03);
+    box-shadow: $shadow-card-hover;
+  }
+  
+  img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  h3 {
+    margin: 12px 0 4px 16px; // ✅ Espacement correct
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.2; // ✅ Line-height normal
+  }
+  p {
+    margin: 0 0 16px 16px; // ✅ Espacement en bas
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.2; // ✅ Line-height normal
+  }
+}
+
+.new {
+  position: absolute;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 7px 10px;
+  color: $color-tertiary-dark;
+  background-color: $color-tertiary;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+  top: 15px;
+  right: 15px;
+}
+
+.heart {
+  bottom: 25px;
+  right: 20px;
+}
+
+// ========================================
+// TABLET SPECIFIC
+// ========================================
+@include tablet {
+  header {
+    max-width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+}

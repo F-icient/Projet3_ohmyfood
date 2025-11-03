@@ -1,0 +1,28 @@
+.heart {
+  position: absolute;
+  display: flex;
+  gap: 5px;
+  
+  .far {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    cursor: pointer;
+  }
+  
+  .fas {
+    opacity: 0;
+    position: absolute;
+    @include gradient-text; // Utilise le mixin gradient texte
+    transition: opacity 0.5s ease;
+  }
+  
+  &:hover {
+    .far {
+      opacity: 0;
+    }
+    
+    .fas {
+      opacity: 1;
+    }
+  }
+}
