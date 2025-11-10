@@ -444,7 +444,7 @@ main {
   bottom: 25px;
   right: 20px;
 }
-
+/*mobile*/
 @media (min-width: 768px) {
   header {
     max-width: 100%;
@@ -475,6 +475,7 @@ main {
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
 }
+/*tablet*/
 @media (min-width: 1024px) {
   .restaurant-page main {
     width: auto;
@@ -511,12 +512,12 @@ main {
   top: 15px;
   right: 50px;
 }
-@media (min-width: 1024px) {
+
   .restaurant-page .heart {
     top: 30px;
     right: 240px;
   }
-}
+
 
 .restaurant-page .container_entrees,
 .restaurant-page .container_plats,
@@ -622,7 +623,7 @@ main {
   max-width: calc(100% - 100px);
 }
 
-@media (min-width: 1024px) {
+
   .restaurant-page .title_resto {
     align-items: center;
     justify-content: center;
@@ -632,4 +633,3 @@ main {
   .restaurant-page .menus {
     padding: 0 100px;
   }
-}/*# sourceMappingURL=main.css.map */

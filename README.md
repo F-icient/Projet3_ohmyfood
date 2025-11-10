@@ -13,3 +13,4 @@ Mise en situation : Développer un site “mobile first” qui répertorie les m
 - [x] Design responsive
 - [x] Loader
 - [x] SASS
+- [x] Check et comments avant livrable

@@ -3,7 +3,7 @@
 // ========================================
 
 // ========================================
-// BACK ARROW (RESTAURANT PAGES ONLY)
+// FLECHE (RESTAURANT PAGES ONLY)
 // ========================================
 .restaurant-page .fleche {
   position: absolute;
@@ -23,7 +23,7 @@
 }
 
 // ========================================
-// MAIN CONTENT (RESTAURANT PAGES ONLY)
+// MAIN avec un margin négatif (RESTAURANT PAGES ONLY)
 // ========================================
 .restaurant-page main {
   display: flex;
@@ -45,7 +45,7 @@
 }
 
 // ========================================
-// TYPOGRAPHY (RESTAURANT PAGES ONLY)
+// TYPOGRAPHY (RESTAURANT)
 // ========================================
 .restaurant-page {
   h1 {
@@ -76,7 +76,7 @@
 }
 
 // ========================================
-// HEART ICON (RESTAURANT PAGE SPECIFIC)
+// HEART ICON (Spécifique à la position du coeur dans restaurant)
 // ========================================
 .restaurant-page .heart {
   top: 15px;
@@ -89,7 +89,7 @@
 }
 
 // ========================================
-// MENU CONTAINERS (RESTAURANT PAGES ONLY)
+// MENU CONTAINERS (RESTAURANT)
 // ========================================
 .restaurant-page {
   .container_entrees,
