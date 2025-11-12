@@ -75,6 +75,17 @@
   }
 }
 
+.visually-hidden {
+  position: absolute;      /* Sorte que l'élément ne prenne pas de place */
+  width: 1px;              /* Largeur minimale */
+  height: 1px;             /* Hauteur minimale */
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;        /* Cache tout contenu débordant */
+  clip: rect(0, 0, 0, 0);  /* Masque l’élément en le limitant à une zone nulle */
+  white-space: nowrap;     /* Empêche le retour à la ligne */
+  border: 0;
+}
 // ========================================
 // HEART ICON (Spécifique à la position du coeur dans restaurant)
 // ========================================
