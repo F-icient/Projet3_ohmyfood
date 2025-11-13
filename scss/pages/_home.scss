@@ -32,6 +32,37 @@ main {
   width: 100%;
   padding: 16px 0;
 }
+.title_homeresto {
+  display: flex;
+  flex-direction: column;   /* colonne pour que le sous-titre aille en-dessous */
+  width: 100%;
+  padding-right: 40px;
+  min-width: 0;
+  margin: 0;
+
+}
+
+.header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.heart {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  /* éviter que le cœur pousse le titre hors de sa ligne */
+  flex-shrink: 0;
+}
+
+.heart-icon {
+  position: absolute;
+  top: 0; left: 0;
+
+}
 
 .loc_title {
   margin: 0;
@@ -104,15 +135,15 @@ main {
   @include tablet {
     max-width: 100%;
     width: calc(100% - 52px);
-    margin: 0 0 0 12px; // ✅ Garde le margin-left
+    margin: 0 0 0 12px; 
   }
   
   // Desktop - Les 3 cartes en ligne
   @include desktop {
-    flex: 1; // ✅ Répartit l'espace équitablement
-    margin: 0 0 0 12px; // ✅ Garde TOUJOURS le margin-left
-    width: auto; // ✅ Largeur automatique
-    max-width: none; // ✅ Pas de limite
+    flex: 1; // 
+    margin: 0 0 0 12px; 
+    width: auto; 
+    max-width: none; 
   }
   
   &:hover {
@@ -189,6 +220,8 @@ main {
   overflow: hidden;
   margin-top: 18px;
   width: 100%;
+
+  
   transition: transform $transition-card, box-shadow $transition-card;
   
   &:hover {
@@ -230,11 +263,14 @@ main {
   right: 15px;
 }
 
-.heart {
-  bottom: 25px;
-  right: 20px;
+// ========================================
+// DESKTOP SPECIFIC
+// ========================================
+@include desktop {
+.title_homeresto {
+ padding-right: 40px;
 }
-
+}
 // ========================================
 // TABLET SPECIFIC
 // ========================================
@@ -244,4 +280,8 @@ main {
     overflow-x: hidden;
     box-sizing: border-box;
   }
+  .title_homeresto {
+    padding-right: 40px; 
+  }
+  
 }

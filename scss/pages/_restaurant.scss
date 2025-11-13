@@ -65,10 +65,7 @@
     }
   }
 
-  .title {
-    margin: 17px 0 10px 40px;
-    font-size: 1.4rem;
-  }
+  
 
   .btn {
     padding: 0.7rem 3rem;
@@ -86,16 +83,12 @@
   white-space: nowrap;     /* Empêche le retour à la ligne */
   border: 0;
 }
-// ========================================
-// HEART ICON (Spécifique à la position du coeur dans restaurant)
-// ========================================
+
 .restaurant-page .heart {
-  top: 15px;
-  right: 50px;
+
   
   @include desktop {
-    top: 30px;
-    right: 240px;
+
   }
 }
 
@@ -116,7 +109,29 @@
     padding: 0;
   }
 }
-
+.title_resto {
+      display: flex;
+      align-items: center; 
+      justify-content: center;
+      width: 100%;
+      margin-top: 20px; 
+      gap: 24px;
+    }
+    .heart {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 10px;
+      width: 44px;            
+      height: 44px;
+      min-width: 0;
+      position: relative;
+    }
+    .title {
+      white-space: nowrap;
+      margin: 0;
+      font-size: 1.4rem;
+    }
 // ========================================
 // MENU ITEMS (ENTREE, PLAT, DESSERT)
 // ========================================
@@ -256,12 +271,7 @@
 // ========================================
 @include desktop {
   .restaurant-page {
-    .title_resto {
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      margin: 32px auto;
-    }
+    
     
     .menus {
       padding: 0 100px;
